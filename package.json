@@ -23,7 +23,7 @@
     "eject": "react-scripts eject",
     "test1": "istanbul cover test.js",
     "coveralls": "cat ./coverage/lcov.info | coveralls",
-    "test2": "react-scripts test --env=jsdom --coverage"
+    "test2": "react-scripts test --env=jsdom"
   },
   "main": "application.js",
   "repository": {

@@ -1,10 +1,15 @@
+import Immutable from 'immutable';
 import todos from './todos'
+
+// const list = Immutable.List.of(1,2,3);
+// const b = Immutable.is(list, Immutable.fromJS([1,2,3]));
+// console.log('x>>>>>>>>>>>>>>>x', b); 
 
 describe('todos reducer', () => {
   it('should handle initial state', () => {
-    expect(
-      todos(undefined, {})
-    ).toEqual([])
+    const a = todos(undefined, {});;
+    const b = Immutable.fromJS([]);
+    expect(Immutable.is(a, b)).toBe(true)
   })
 
   it('should handle ADD_TODO', () => {

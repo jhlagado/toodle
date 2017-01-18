@@ -1,6 +1,6 @@
 import x from './x'
 
-console.log('WHERE??????????',x);
+// console.log('WHERE??????????',x);
 
 describe('Addition', () => {
   // it('knows that 2 and 2 make 4', () => {
@@ -16,6 +16,6 @@ describe('Addition', () => {
     expect(typeof x).toBe('function');
   });
   it('to return 123', () => {
-    expect(x()).toBe(123);
+    expect(x()).toBe(123); 
   });
 });

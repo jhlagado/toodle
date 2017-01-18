@@ -1,6 +1,3 @@
-import x1 from './test-x';
-
-
 var module = require('./application');
 var random = Math.random();
 

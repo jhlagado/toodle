@@ -27,7 +27,7 @@ describe('todo reducer', () => {
 
   it('should handle noop', () => {
     expect(
-      todo(state, {
+      todo(state, { 
         type: 'NOOP',
         id: 1
       })

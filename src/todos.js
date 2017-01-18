@@ -31,12 +31,9 @@ const todos = (state = Immutable.fromJS([]), action) => {
       return state.map(function(t){
         return todo(t, action)
       })
-//       return state.map(t =>
-//         todo(t, action)
-//       )
     default:
       return state
   }
 }
 
-export default todos
+export { todo, todos }; 

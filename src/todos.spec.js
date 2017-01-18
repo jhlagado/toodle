@@ -1,9 +1,40 @@
 import Immutable from 'immutable';
-import todos from './todos'
+import { todo, todos }from './todos'
 
-// const list = Immutable.List.of(1,2,3);
-// const b = Immutable.is(list, Immutable.fromJS([1,2,3]));
-// console.log('x>>>>>>>>>>>>>>>x', b); 
+// jest.resetModules();
+
+describe('todo reducer', () => {
+
+  var state = Immutable.fromJS({
+    text: 'Run the tests',
+    completed: false,
+    id: 1
+  })
+
+  it('should handle TOGGLE_TODO', () => {
+    var after = Immutable.fromJS({
+      text: 'Run the tests',
+      completed: true,
+      id: 1
+    })
+    expect(
+      todo(state, {
+        type: 'TOGGLE_TODO',
+        id: 1
+      }).get('completed')
+    ).toEqual(!after.get('completed'));
+  })
+
+  it('should handle noop', () => {
+    expect(
+      todo(state, {
+        type: 'NOOP',
+        id: 1
+      })
+    ).toBe(state);
+  })
+
+});
 
 describe('todos reducer', () => {
   it('should handle initial state', () => {
@@ -112,5 +143,4 @@ describe('todos reducer', () => {
       }
     ])
   })
-
 })

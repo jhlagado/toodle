@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1484740934228" clover="3.2.0">
-  <project timestamp="1484740934228" name="All files">
-    <metrics statements="18" coveredstatements="18" conditionals="13" coveredconditionals="13" methods="5" coveredmethods="5" elements="36" coveredelements="36" complexity="0" loc="18" ncloc="18" packages="2" files="3" classes="3">
+<coverage generated="1484786227359" clover="3.2.0">
+  <project timestamp="1484786227360" name="All files">
+    <metrics statements="38" coveredstatements="38" conditionals="20" coveredconditionals="20" methods="10" coveredmethods="10" elements="68" coveredelements="68" complexity="0" loc="38" ncloc="38" packages="3" files="8" classes="8">
       <package name="src">
         <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <file name="x.js" path="C:\Users\jh\work\react\toodle\src\x.js">
@@ -9,18 +9,56 @@
           <line num="1" count="1" type="stmt"/>
         </file>
       </package>
+      <package name="src.actions">
+        <metrics statements="9" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
+        <file name="AppMenuActions.js" path="C:\Users\jh\work\react\toodle\src\actions\AppMenuActions.js">
+          <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+          <line num="3" count="2" type="stmt"/>
+          <line num="4" count="2" type="stmt"/>
+          <line num="6" count="2" type="stmt"/>
+          <line num="7" count="2" type="stmt"/>
+        </file>
+        <file name="makeActionCreator.js" path="C:\Users\jh\work\react\toodle\src\actions\makeActionCreator.js">
+          <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
+          <line num="2" count="5" type="stmt"/>
+          <line num="3" count="2" type="stmt"/>
+          <line num="4" count="2" type="stmt"/>
+          <line num="5" count="2" type="stmt"/>
+          <line num="7" count="2" type="stmt"/>
+        </file>
+      </package>
       <package name="src.reducers">
-        <metrics statements="17" coveredstatements="17" conditionals="13" coveredconditionals="13" methods="4" coveredmethods="4"/>
+        <metrics statements="28" coveredstatements="28" conditionals="20" coveredconditionals="20" methods="6" coveredmethods="6"/>
+        <file name="appMenuReducers.js" path="C:\Users\jh\work\react\toodle\src\reducers\appMenuReducers.js">
+          <metrics statements="6" coveredstatements="6" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
+          <line num="4" count="1" type="stmt"/>
+          <line num="9" count="1" type="stmt"/>
+          <line num="11" count="3" type="stmt"/>
+          <line num="13" count="1" type="stmt"/>
+          <line num="18" count="1" type="stmt"/>
+          <line num="20" count="1" type="stmt"/>
+        </file>
+        <file name="index.js" path="C:\Users\jh\work\react\toodle\src\reducers\index.js">
+          <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+          <line num="4" count="1" type="stmt"/>
+        </file>
+        <file name="router-reducer.js" path="C:\Users\jh\work\react\toodle\src\reducers\router-reducer.js">
+          <metrics statements="4" coveredstatements="4" conditionals="3" coveredconditionals="3" methods="1" coveredmethods="1"/>
+          <line num="8" count="1" type="stmt"/>
+          <line num="15" count="2" type="stmt"/>
+          <line num="16" count="1" type="stmt"/>
+          <line num="21" count="1" type="stmt"/>
+        </file>
         <file name="todos.js" path="C:\Users\jh\work\react\toodle\src\reducers\todos.js">
           <metrics statements="13" coveredstatements="13" conditionals="10" coveredconditionals="10" methods="3" coveredmethods="3"/>
-          <line num="3" count="1" type="stmt"/>
+          <line num="3" count="2" type="stmt"/>
           <line num="4" count="7" type="stmt"/>
           <line num="6" count="3" type="stmt"/>
           <line num="12" count="3" type="stmt"/>
           <line num="13" count="2" type="stmt"/>
           <line num="16" count="1" type="stmt"/>
           <line num="21" count="1" type="stmt"/>
-          <line num="25" count="1" type="stmt"/>
+          <line num="25" count="2" type="stmt"/>
           <line num="26" count="5" type="stmt"/>
           <line num="28" count="3" type="stmt"/>
           <line num="31" count="1" type="stmt"/>
@@ -29,7 +67,7 @@
         </file>
         <file name="visibilityFilter.js" path="C:\Users\jh\work\react\toodle\src\reducers\visibilityFilter.js">
           <metrics statements="4" coveredstatements="4" conditionals="3" coveredconditionals="3" methods="1" coveredmethods="1"/>
-          <line num="1" count="1" type="stmt"/>
+          <line num="1" count="2" type="stmt"/>
           <line num="2" count="2" type="stmt"/>
           <line num="4" count="1" type="stmt"/>
           <line num="6" count="1" type="stmt"/>

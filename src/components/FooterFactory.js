@@ -1,11 +1,10 @@
-import React from 'react'
 import FilterLink from '../containers/FilterLink'
 
-const Footer = () => (
+export default React => () => (
   <p>
     Show:
     {" "}
-    <FilterLink filter="SHOW_ALL">
+    <FilterLink filter="SHOW_ALL" >
       All
     </FilterLink>
     {", "}
@@ -18,5 +17,3 @@ const Footer = () => (
     </FilterLink>
   </p>
 )
-
-export default Footer

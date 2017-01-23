@@ -1,6 +1,11 @@
-import Footer from './components/Footer'
+import React from 'react'
+
+import FooterFactory from './components/FooterFactory'
+
 import AddTodo from './containers/AddTodo'
 import VisibleTodoList from './containers/VisibleTodoList'
+
+const Footer = FooterFactory(React);
 
 export default React => () => (
   <div>

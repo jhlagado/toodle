@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for src/App.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="..\prettify.css" />
+    <link rel="stylesheet" href="..\base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(..\sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="..\index.html">All files</a> / <a href="index.html">src</a> App.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>0/12</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>0/10</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>0/3</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>0/10</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line low'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57</td><td class="line-coverage quiet"><span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import React from 'react'<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ></span></span>
+&nbsp;
+import { Link } from 'react-router'
+import AppMenu from './containers/AppMenu'<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" ></span></span>
+&nbsp;
+const closeNav <span class="cstat-no" title="statement not covered" >= e =&gt; {<span class="fstat-no" title="function not covered" ></span></span>
+  var layout = <span class="cstat-no" title="statement not covered" >document.querySelector('.mdl-layout');</span>
+<span class="cstat-no" title="statement not covered" >  if (layout &amp;&amp; layout.MaterialLayout) {</span>
+    const ml <span class="cstat-no" title="statement not covered" >= layout.MaterialLayou</span>t;
+    const isVisible <span class="cstat-no" title="statement not covered" >= ml.drawer_.classList.contains('is-visible'</span>); 
+<span class="cstat-no" title="statement not covered" >    console.log(isVisible);</span>
+<span class="cstat-no" title="statement not covered" >    if (isVisible) <span class="cstat-no" title="statement not covered" >ml.toggleDrawer(); </span></span>
+  }  
+}
+&nbsp;
+const MenuLink <span class="cstat-no" title="statement not covered" >= ({to, c<span class="fstat-no" title="function not covered" >hildren})</span> =&gt; (</span>
+  &lt;Link className="mdl-navigation__link" onClick={closeNav} to={to}&gt;{children}&lt;/Link&gt;
+);
+&nbsp;
+export default ({children}) =&gt; (
+  &lt;div className="mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header"&gt;
+    &lt;header className="mdl-layout__header"&gt;
+      &lt;div className="mdl-layout__header-row"&gt;
+        &lt;span className="mdl-layout-title"&gt;To Do&lt;/span&gt;
+        &lt;div className="mdl-layout-spacer"&gt;&lt;/div&gt;
+        &lt;nav className="mdl-navigation"&gt;
+&nbsp;
+          &lt;div className="material-icons mdl-badge mdl-badge--overlap" 
+            data-badge="1"&gt;email&lt;/div&gt;
+&nbsp;
+          &lt;button className="mdl-button mdl-js-button mdl-button--icon"&gt;
+            &lt;i className="material-icons"&gt;person&lt;/i&gt;
+          &lt;/button&gt;
+          &lt;button id="demo-menu-lower-right"
+                  className="mdl-button mdl-js-button mdl-button--icon"&gt;
+            &lt;i className="material-icons"&gt;more_vert&lt;/i&gt;
+          &lt;/button&gt;
+        &lt;/nav&gt;
+      &lt;/div&gt;
+      &lt;AppMenu /&gt;
+    &lt;/header&gt;
+    &lt;div className="mdl-layout__drawer"&gt;
+      &lt;span className="mdl-layout-title"&gt;Lagado&lt;/span&gt;
+      &lt;nav className="mdl-navigation"&gt;
+        &lt;MenuLink to="/todos"&gt;To Dos&lt;/MenuLink&gt;
+        &lt;MenuLink className="mdl-navigation__link" to="/about"&gt;About&lt;/MenuLink&gt;
+      &lt;/nav&gt;
+    &lt;/div&gt;
+    &lt;main className="mdl-layout__content"&gt;
+      &lt;div className="page-content" style={{margin:'30px'}}&gt;
+        {children}
+      &lt;/div&gt;
+    &lt;/main&gt;
+  &lt;/div&gt;
+)
+&nbsp;
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Mon Jan 23 2017 10:44:52 GMT+1100 (AUS Eastern Daylight Time)
+</div>
+</div>
+<script src="..\prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="..\sorter.js"></script>
+</body>
+</html>

@@ -1,5 +1,6 @@
-export default (type, ...argNames) => {
-  return function(...args) {
+// @flow 
+export default (type : any, ...argNames: any) => {
+  return function(...args: any) {
     let action = { type }
     argNames.forEach((arg, index) => {
       action[argNames[index]] = args[index]

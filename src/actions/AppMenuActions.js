@@ -1,3 +1,5 @@
+// @flow 
+
 import makeActionCreator from './makeActionCreator.js'
 
 export const SHOW_MODAL = 'SHOW_MODAL';

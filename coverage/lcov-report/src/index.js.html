@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for src/index.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="..\prettify.css" />
+    <link rel="stylesheet" href="..\base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(..\sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="..\index.html">All files</a> / <a href="index.html">src</a> index.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>0/8</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>0/6</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>0/4</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>0/8</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line low'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61</td><td class="line-coverage quiet"><span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import React from 'react'<span class="cstat-no" title="statement not covered" ></span>
+import { render } from 'react-dom'
+// import { createStore } from 'redux'
+import { Provider } from 'react-redux'
+import { Router, Route, IndexRoute } from 'react-router'
+// import { syncHistoryWithStore } from 'react-router-redux'
+// import reducer from './reducers'
+&nbsp;
+import {store, history} from './redux-router-init.js'
+&nbsp;
+&nbsp;
+import App from './App'
+import AboutPage from './AboutPage'
+import TodosPage from './TodosPage'<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" ></span></span>
+&nbsp;
+// //REDUX_DEVTOOLS_EXTENSION refers to a Chrome extension for redux debugging
+// //https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd/related?hl=en
+// const store = createStore(reducer, 
+//   window.__REDUX_DEVTOOLS_EXTENSION__ &amp;&amp; 
+//   window.__REDUX_DEVTOOLS_EXTENSION__())
+&nbsp;
+// const history = syncHistoryWithStore(hashHistory, store);
+&nbsp;
+render(
+  &lt;Provider store={store}&gt;
+    &lt;Router history={history}&gt;
+      &lt;Route path="/" component={App}&gt;
+        &lt;IndexRoute component={TodosPage}/&gt;
+        &lt;Route path="/todos" component={TodosPage}/&gt;
+        &lt;Route path="/about" component={AboutPage}/&gt; 
+      &lt;/Route&gt;
+    &lt;/Router&gt;
+  &lt;/Provider&gt;,
+  document.getElementById('root')
+)
+&nbsp;
+<span class="cstat-no" title="statement not covered" >window.addEventListener('load', <span class="fstat-no" title="function not covered" >fu</span>nction() {</span>
+&nbsp;
+//   var dialog = document.querySelector('dialog');
+//   window.dialogPolyfill.registerDialog(dialog);
+//   dialog.showModal();
+&nbsp;
+  var observer = <span class="cstat-no" title="statement not covered" >new MutationObserver(<span class="fstat-no" title="function not covered" >fu</span>nction (mutations) {</span>
+<span class="cstat-no" title="statement not covered" >    mutations.forEach(<span class="fstat-no" title="function not covered" >mu</span>tation =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >      if (mutation.addedNodes) {</span>
+<span class="cstat-no" title="statement not covered" >        window.componentHandler.upgradeElements(mutation.addedNodes);</span>
+//         mutation.addedNodes.forEach(node =&gt; {
+//           if (node.tagName === 'DIALOG') {
+//             window.dialogPolyfill.registerDialog(node);
+//           }
+//         }) 
+      }  
+    })
+  });
+<span class="cstat-no" title="statement not covered" >  observer.observe(document.body, {</span>
+      childList: true,
+      subtree: true
+  });
+});
+&nbsp;
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Mon Jan 23 2017 10:44:52 GMT+1100 (AUS Eastern Daylight Time)
+</div>
+</div>
+<script src="..\prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="..\sorter.js"></script>
+</body>
+</html>

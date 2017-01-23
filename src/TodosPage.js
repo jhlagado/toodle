@@ -1,9 +1,8 @@
-import React from 'react'
 import Footer from './components/Footer'
 import AddTodo from './containers/AddTodo'
 import VisibleTodoList from './containers/VisibleTodoList'
 
-export default () => (
+export default React => () => (
   <div>
     <div className="mdl-card mdl-card mdl-shadow--2dp" style={{margin:'auto'}}>
       <div className="mdl-card__media">

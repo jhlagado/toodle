@@ -21,13 +21,16 @@ import TodosPage from './TodosPage'
 
 // const history = syncHistoryWithStore(hashHistory, store);
 
+const aboutPage = AboutPage(React);
+const todosPage = TodosPage(React);
+
 render(
   <Provider store={store}>
     <Router history={history}>
       <Route path="/" component={App}>
-        <IndexRoute component={TodosPage}/>
-        <Route path="/todos" component={TodosPage}/>
-        <Route path="/about" component={AboutPage}/> 
+        <IndexRoute component={todosPage}/>
+        <Route path="/todos" component={todosPage}/>
+        <Route path="/about" component={aboutPage}/> 
       </Route>
     </Router>
   </Provider>,

@@ -1,5 +1,5 @@
-import React from 'react'
+// import React from 'react'
 
-export default () => (
-  <div>About</div>
+export default React => () => (
+  <div><h1>About</h1></div>
 )

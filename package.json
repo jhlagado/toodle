@@ -3,9 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
-    "react-scripts": "0.8.5",
+    "cheerio": "^0.22.0",
     "coveralls": "^2.11.15",
-    "istanbul": "^0.4.5"
+    "istanbul": "^0.4.5",
+    "react-scripts": "0.8.5"
   },
   "dependencies": {
     "immutable": "^3.8.1",

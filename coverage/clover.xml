@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1485174864922" clover="3.2.0">
-  <project timestamp="1485174864922" name="All files">
-    <metrics statements="133" coveredstatements="55" conditionals="70" coveredconditionals="20" methods="44" coveredmethods="14" elements="247" coveredelements="89" complexity="0" loc="133" ncloc="133" packages="5" files="21" classes="21">
+<coverage generated="1485176154911" clover="3.2.0">
+  <project timestamp="1485176154911" name="All files">
+    <metrics statements="137" coveredstatements="59" conditionals="72" coveredconditionals="21" methods="44" coveredmethods="15" elements="253" coveredelements="95" complexity="0" loc="137" ncloc="137" packages="5" files="22" classes="22">
       <package name="src">
         <metrics statements="39" coveredstatements="2" conditionals="30" coveredconditionals="0" methods="13" coveredmethods="2"/>
         <file name="AboutPage.js" path="C:\Users\jh\work\react\toodle\src\AboutPage.js">
@@ -60,7 +60,7 @@
         </file>
       </package>
       <package name="src.actions">
-        <metrics statements="15" coveredstatements="15" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="3"/>
+        <metrics statements="19" coveredstatements="19" conditionals="2" coveredconditionals="1" methods="4" coveredmethods="4"/>
         <file name="AppMenuActions.js" path="C:\Users\jh\work\react\toodle\src\actions\AppMenuActions.js">
           <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
           <line num="5" count="1" type="stmt"/>
@@ -69,21 +69,28 @@
           <line num="9" count="1" type="stmt"/>
         </file>
         <file name="TodoActions.js" path="C:\Users\jh\work\react\toodle\src\actions\TodoActions.js">
-          <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
-          <line num="4" count="1" type="stmt"/>
-          <line num="5" count="1" type="stmt"/>
-          <line num="6" count="1" type="stmt"/>
-          <line num="8" count="1" type="stmt"/>
-          <line num="14" count="1" type="stmt"/>
-          <line num="15" count="1" type="stmt"/>
-        </file>
-        <file name="makeActionCreator.js" path="C:\Users\jh\work\react\toodle\src\actions\makeActionCreator.js">
-          <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
-          <line num="3" count="5" type="stmt"/>
+          <metrics statements="6" coveredstatements="6" conditionals="2" coveredconditionals="1" methods="1" coveredmethods="1"/>
           <line num="4" count="2" type="stmt"/>
           <line num="5" count="2" type="stmt"/>
           <line num="6" count="2" type="stmt"/>
           <line num="8" count="2" type="stmt"/>
+          <line num="14" count="2" type="stmt"/>
+          <line num="15" count="2" type="stmt"/>
+        </file>
+        <file name="appMenuActions.js" path="C:\Users\jh\work\react\toodle\src\actions\appMenuActions.js">
+          <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+          <line num="5" count="1" type="stmt"/>
+          <line num="6" count="1" type="stmt"/>
+          <line num="8" count="1" type="stmt"/>
+          <line num="9" count="1" type="stmt"/>
+        </file>
+        <file name="makeActionCreator.js" path="C:\Users\jh\work\react\toodle\src\actions\makeActionCreator.js">
+          <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
+          <line num="3" count="9" type="stmt"/>
+          <line num="4" count="4" type="stmt"/>
+          <line num="5" count="4" type="stmt"/>
+          <line num="6" count="4" type="stmt"/>
+          <line num="8" count="4" type="stmt"/>
         </file>
       </package>
       <package name="src.components">

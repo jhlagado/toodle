@@ -1,7 +1,7 @@
 import findKey from 'lodash/findKey';
 
-import * as actions from './appMenuActions';
-import {SHOW_MODAL, HIDE_MODAL} from './appMenuActions';
+import * as actions from './AppMenuActions';
+import {SHOW_MODAL, HIDE_MODAL} from './AppMenuActions';
 
 describe('appMenu actions check', () => { 
 

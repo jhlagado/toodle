@@ -7,7 +7,7 @@ import { setVisibilityFilter } from '../actions/TodoActions'
 import LinkFactory from '../components/LinkFactory'
 
 const Link = LinkFactory(React);
-export let clickFilterLink = (dispatch, filter) => {
+export let clickFilterLink = (dispatch:Function, filter: string) => {
   dispatch(setVisibilityFilter(filter))
 }
 

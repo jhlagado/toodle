@@ -1,6 +1,6 @@
 import {clickFilterLink} from './FilterLink'
 
-const received = undefined;
+let received;
 const dispatch = (action) => {
   received = action;
 }

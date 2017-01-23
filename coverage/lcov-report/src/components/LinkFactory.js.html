@@ -20,9 +20,9 @@
     </h1>
     <div class='clearfix'>
       <div class='fl pad1y space-right2'>
-        <span class="strong">44.44% </span>
+        <span class="strong">0% </span>
         <span class="quiet">Statements</span>
-        <span class='fraction'>4/9</span>
+        <span class='fraction'>0/12</span>
       </div>
       <div class='fl pad1y space-right2'>
         <span class="strong">0% </span>
@@ -30,14 +30,14 @@
         <span class='fraction'>0/2</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">33.33% </span>
+        <span class="strong">0% </span>
         <span class="quiet">Functions</span>
-        <span class='fraction'>1/3</span>
+        <span class='fraction'>0/3</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">44.44% </span>
+        <span class="strong">0% </span>
         <span class="quiet">Lines</span>
-        <span class='fraction'>4/9</span>
+        <span class='fraction'>0/10</span>
       </div>
     </div>
   </div>
@@ -72,19 +72,19 @@
 27
 28
 29
-30</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+30</td><td class="line-coverage quiet"><span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -93,28 +93,28 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">export default React =&gt; {
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">export default React =&gt; {<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" ></span></span></span></span>
 &nbsp;
-  const PropTypes = React.PropTypes;
+  const PropTypes <span class="cstat-no" title="statement not covered" >= React.PropType</span>s;
 &nbsp;
-  const Link = <span class="fstat-no" title="function not covered" >({</span> active, children, onClick }) =&gt; {
+  const Link <span class="cstat-no" title="statement not covered" >= ({ acti<span class="fstat-no" title="function not covered" >ve, c</span>hildren, onClick }) =&gt; {</span>
 <span class="cstat-no" title="statement not covered" >    if (active) {</span>
 <span class="cstat-no" title="statement not covered" >      return &lt;span&gt;{children}&lt;/span&gt;</span>
     }
 &nbsp;
 <span class="cstat-no" title="statement not covered" >    return (</span>
       &lt;a href="#"
-        onClick={<span class="fstat-no" title="function not covered" >e </span>=&gt; {
-<span class="cstat-no" title="statement not covered" >          e.preventDefault()</span>
-<span class="cstat-no" title="statement not covered" >          onClick()</span>
+        onClick={e =&gt; {<span class="fstat-no" title="function not covered" ></span>
+          e.<span class="cstat-no" title="statement not covered" >preventDefault()</span>
+          on<span class="cstat-no" title="statement not covered" >Click()</span>
         }}
       &gt;
         {children}
@@ -122,13 +122,13 @@
     )
   }
 &nbsp;
-  Link.propTypes = {
+<span class="cstat-no" title="statement not covered" >  Link.propTypes = {</span>
     active: PropTypes.bool.isRequired,
     children: PropTypes.node.isRequired,
     onClick: PropTypes.func.isRequired
   }
 &nbsp;
-  return Link;
+<span class="cstat-no" title="statement not covered" >  return Link;</span>
 &nbsp;
 }</pre></td></tr>
 </table></pre>
@@ -136,7 +136,7 @@
 </div><!-- /wrapper -->
 <div class='footer quiet pad2 space-top1 center small'>
   Code coverage
-  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Tue Jan 24 2017 10:29:49 GMT+1100 (AUS Eastern Daylight Time)
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Tue Jan 24 2017 10:50:07 GMT+1100 (AUS Eastern Daylight Time)
 </div>
 </div>
 <script src="..\..\prettify.js"></script>

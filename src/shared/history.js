@@ -1,13 +1,13 @@
 /* External dependencies */
-import { combineReducers } from 'redux-immutable';
-import Immutable from 'immutable';
-import { createStore } from 'redux';
+// import { combineReducers } from 'redux-immutable';
+// import Immutable from 'immutable';
+// import { createStore } from 'redux';
 import { hashHistory } from 'react-router';
 import { syncHistoryWithStore } from 'react-router-redux'
 
 /* Internal dependencies */
-import routerReducer from './reducers/router-reducer'
-import reducers from './reducers'
+// import routerReducer from './reducers/router-reducer'
+import store from './store'
 
 ////////////////////////////////////////////////
 
@@ -15,17 +15,17 @@ import reducers from './reducers'
  * Combine reducers into root reducer and create store.
  * Note thate 'combineReducers' is a redux-immutable version
  */
-const rootReducer = combineReducers({
-  ...reducers,
-  routing: routerReducer
-})
-const initialState = Immutable.Map();
+// const rootReducer = combineReducers({
+//   ...reducers,
+//   routing: routerReducer
+// })
+// const initialState = Immutable.Map();
 
-const store = createStore(rootReducer, initialState,
-  // Enable redux dev tools
-  window.__REDUX_DEVTOOLS_EXTENSION__ 
-  && window.__REDUX_DEVTOOLS_EXTENSION__()
-);
+// const store = createStore(rootReducer, initialState,
+//   // Enable redux dev tools
+//   window.__REDUX_DEVTOOLS_EXTENSION__ 
+//   && window.__REDUX_DEVTOOLS_EXTENSION__()
+// );
 
 /* Create enhanced history object for router */
 const createSelectLocationState = () => {
@@ -40,7 +40,7 @@ const createSelectLocationState = () => {
   };
 };
 
-const history = syncHistoryWithStore(hashHistory, store, {
+export default syncHistoryWithStore(hashHistory, store, {
   selectLocationState: createSelectLocationState()
 });
 
@@ -48,4 +48,4 @@ const history = syncHistoryWithStore(hashHistory, store, {
 ////////////////////////////////////////////////
 
 /* Exports */
-export { store, history }
+// export { store, history }

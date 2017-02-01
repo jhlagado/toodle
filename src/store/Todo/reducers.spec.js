@@ -5,14 +5,14 @@ import { todo, todos }from './todos'
 
 describe('todo reducer', () => {
 
-  var state = Immutable.fromJS({
+  var state = Immutable.Map({
     text: 'Run the tests',
     completed: false,
     id: 1
   })
 
   it('should handle TOGGLE_TODO', () => {
-    var after = Immutable.fromJS({
+    var after = Immutable.Map({
       text: 'Run the tests',
       completed: true,
       id: 1
@@ -39,7 +39,7 @@ describe('todo reducer', () => {
 describe('todos reducer', () => {
   it('should handle initial state', () => {
     const a = todos(undefined, {});;
-    const b = Immutable.fromJS([]);
+    const b = Immutable.List();
     expect(Immutable.is(a, b)).toBe(true)
   })
 

@@ -1,21 +1,19 @@
 import React from 'react'
 import { render } from 'react-dom'
-// import { createStore } from 'redux'
 import { Provider } from 'react-redux'
-import { Router, Route, IndexRoute } from 'react-router'
-// import { syncHistoryWithStore } from 'react-router-redux'
-// import reducer from './reducers'
+import { Router, Route, IndexRoute, hashHistory } from 'react-router'
+import { syncHistoryWithStore } from 'react-router-redux'
 
-import store from './shared/store'
-import history from './shared/history'
-
+import store from './store'
 
 import App from './App'
-import AboutPage from './AboutPage'
-import TodosPage from './TodosPage'
+import AboutPage from './screens/AboutPage'
+import TodosPage from './screens/TodosPage'
 
 const aboutPage = AboutPage(React);
 const todosPage = TodosPage(React);
+
+const history = syncHistoryWithStore(hashHistory, store)
 
 render(
   <Provider store={store}>

@@ -3,21 +3,15 @@
 import React from 'react'
 
 import { connect } from 'react-redux'
-import { setVisibilityFilter } from '../actions/TodoActions'
+import { setVisibilityFilter } from '../store/Todo/actions'
 import LinkFactory from '../components/LinkFactory'
 
 const Link = LinkFactory(React);
-// export let clickFilterLink = (dispatch:Function, filter: string) => {
-//   dispatch(setVisibilityFilter(filter))
-// }
 
 const mapStateToProps = (state, ownProps) => ({
-  active: ownProps.filter === state.get('visibilityFilter')
+  active: ownProps.filter === state.visibilityFilter
 })
 
-// const mapDispatchToProps = (dispatch, ownProps) => ({
-//   onClick: clickFilterLink(dispatch, ownProps.filter)
-// })
 export let mapDispatchToProps = (dispatch, ownProps) => ({
   onClick: () => {
     dispatch(setVisibilityFilter(ownProps.filter))

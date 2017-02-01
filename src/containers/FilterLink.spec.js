@@ -1,3 +1,4 @@
+import {SET_VISIBILITY_FILTER} from '../store/Todo/constants'
 import {mapDispatchToProps} from './FilterLink'
 
 describe('filterlink', () => {
@@ -9,7 +10,7 @@ describe('filterlink', () => {
     }
     var map = mapDispatchToProps(dispatch, {filter: 'filter1'});
     map.onClick();
-    expect(received.type).toBe('SET_VISIBILITY_FILTER');
+    expect(received.type).toBe(SET_VISIBILITY_FILTER);
     expect(received.filter).toBe('filter1');
   })
 

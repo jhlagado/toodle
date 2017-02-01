@@ -1,18 +1,17 @@
-import Immutable from 'immutable';
+import {ADD_TODO, TOGGLE_TODO} from './constants'
 
-const todo = (state = Immutable.fromJS({}), action) => {
+const todo = (state = {}, action) => {
   switch (action.type) {
-    case 'ADD_TODO':
+    case ADD_TODO:
       return {
-        id: action.id,
-        text: action.text,
+        id: action.payload.id,
+        text: action.payload.text,
         completed: false
       }
-    case 'TOGGLE_TODO':
-      if (state.id !== action.id) {
+    case TOGGLE_TODO:
+      if (state.id !== action.payload.id) {
         return state
       }
-//       return state.set('completed', !state.completed)
       return {
         ...state,
         completed: !state.completed
@@ -22,12 +21,12 @@ const todo = (state = Immutable.fromJS({}), action) => {
   }
 }
 
-const todos = (state = Immutable.fromJS([]), action) => {
+const todos = (state = [], action) => {
   switch (action.type) {
-    case 'ADD_TODO':
+    case ADD_TODO:
       return state.concat(todo(undefined, action));
 
-    case 'TOGGLE_TODO':
+    case TOGGLE_TODO:
       return state.map(function(t){
         return todo(t, action)
       })

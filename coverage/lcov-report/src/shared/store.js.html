@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <title>Code coverage report for src/containers/VisibleTodoList.js</title>
+    <title>Code coverage report for src/shared/store.js</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="..\..\prettify.css" />
     <link rel="stylesheet" href="..\..\base.css" />
@@ -16,28 +16,28 @@
 <div class='wrapper'>
   <div class='pad1'>
     <h1>
-      <a href="..\..\index.html">All files</a> / <a href="index.html">src/containers</a> VisibleTodoList.js
+      <a href="..\..\index.html">All files</a> / <a href="index.html">src/shared</a> store.js
     </h1>
     <div class='clearfix'>
       <div class='fl pad1y space-right2'>
         <span class="strong">0% </span>
         <span class="quiet">Statements</span>
-        <span class='fraction'>0/14</span>
+        <span class='fraction'>0/4</span>
       </div>
       <div class='fl pad1y space-right2'>
         <span class="strong">0% </span>
         <span class="quiet">Branches</span>
-        <span class='fraction'>0/8</span>
+        <span class='fraction'>0/4</span>
       </div>
       <div class='fl pad1y space-right2'>
         <span class="strong">0% </span>
         <span class="quiet">Functions</span>
-        <span class='fraction'>0/5</span>
+        <span class='fraction'>0/1</span>
       </div>
       <div class='fl pad1y space-right2'>
         <span class="strong">0% </span>
         <span class="quiet">Lines</span>
-        <span class='fraction'>0/14</span>
+        <span class='fraction'>0/4</span>
       </div>
     </div>
   </div>
@@ -70,35 +70,17 @@
 25
 26
 27
-28
-29
-30
-31
-32
-33
-34
-35
-36</td><td class="line-coverage quiet"><span class="cline-any cline-no">&nbsp;</span>
+28</td><td class="line-coverage quiet"><span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -113,41 +95,35 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { connect } from 'react-redux'<span class="cstat-no" title="statement not covered" ></span>
-import { toggleTodo } from '../actions/TodoActions'
-import TodoList from '../components/TodoList'<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" ></span></span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">/* External dependencies */<span class="cstat-no" title="statement not covered" ></span>
+import { combineReducers } from 'redux-immutable';
+import Immutable from 'immutable';
+import { createStore } from 'redux';
 &nbsp;
-const getVisibleTodos <span class="cstat-no" title="statement not covered" >= (todos,<span class="fstat-no" title="function not covered" > filter) =&gt; {</span></span>
-<span class="cstat-no" title="statement not covered" >  switch (filter) {</span>
-    case 'SHOW_ALL':
-<span class="cstat-no" title="statement not covered" >      return todos</span>
-    case 'SHOW_COMPLETED':
-<span class="cstat-no" title="statement not covered" >      return todos.filter(<span class="fstat-no" title="function not covered" >t </span>=&gt; t.completed)</span>
-    case 'SHOW_ACTIVE':
-<span class="cstat-no" title="statement not covered" >      return todos.filter(<span class="fstat-no" title="function not covered" >t </span>=&gt; !t.completed)</span>
-    default:
-<span class="cstat-no" title="statement not covered" >      throw new Error('Unknown filter: ' + filter)</span>
-  }
-}
+/* Internal dependencies */
+import routerReducer from '../reducers/router-reducer'
+import reducers from '../reducers'<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" ></span></span>
 &nbsp;
-const mapStateToProps <span class="cstat-no" title="statement not covered" >= (state)<span class="fstat-no" title="function not covered" > =&gt; {</span></span>
-  let todos = <span class="cstat-no" title="statement not covered" >state.get('todos');</span>
-  let visibilityFilter = <span class="cstat-no" title="statement not covered" >state.get('visibilityFilter');</span>
-<span class="cstat-no" title="statement not covered" >  return({</span>
-    todos: getVisibleTodos(todos, visibilityFilter)
-  })
-}
+////////////////////////////////////////////////
 &nbsp;
-const mapDispatchToProps <span class="cstat-no" title="statement not covered" >=  ({</span>
-  onTodoClick: toggleTodo
+/**
+ * Combine reducers into root reducer and create store.
+ * Note thate 'combineReducers' is a redux-immutable version
+ */
+const rootReducer = combineReducers({<span class="cstat-no" title="statement not covered" ></span>
+  ...reducers,
+  routing: routerReducer
 })
+const initialState = Immutable.Map();<span class="cstat-no" title="statement not covered" ></span>
 &nbsp;
-const VisibleTodoList = connect(<span class="cstat-no" title="statement not covered" ></span>
-  mapStateToProps,
-  mapDispatchToProps
-)(TodoList)
+export default createStore(rootReducer, initialState,
+  // Enable redux dev tools
+  window.__REDUX_DEVTOOLS_EXTENSION__ 
+  &amp;&amp; window.__REDUX_DEVTOOLS_EXTENSION__()
+);
 &nbsp;
-export default VisibleTodoList
 &nbsp;</pre></td></tr>
 </table></pre>
 <div class='push'></div><!-- for sticky footer -->

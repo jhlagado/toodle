@@ -1,7 +1,7 @@
 import findKey from 'lodash/findKey';
 
-import * as actions from './TodoActions'
-import {ADD_TODO, SET_VISIBILITY_FILTER, TOGGLE_TODO} from './TodoActions'
+import * as actions from './actions'
+import {ADD_TODO, SET_VISIBILITY_FILTER, TOGGLE_TODO} from './constants'
 
 describe('todo actions', () => {
 

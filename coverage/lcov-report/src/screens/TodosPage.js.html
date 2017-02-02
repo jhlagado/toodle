@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <title>Code coverage report for src/containers/VisibleTodoList.js</title>
+    <title>Code coverage report for src/screens/TodosPage.js</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="..\..\prettify.css" />
     <link rel="stylesheet" href="..\..\base.css" />
@@ -16,28 +16,28 @@
 <div class='wrapper'>
   <div class='pad1'>
     <h1>
-      <a href="..\..\index.html">All files</a> / <a href="index.html">src/containers</a> VisibleTodoList.js
+      <a href="..\..\index.html">All files</a> / <a href="index.html">src/screens</a> TodosPage.js
     </h1>
     <div class='clearfix'>
       <div class='fl pad1y space-right2'>
         <span class="strong">0% </span>
         <span class="quiet">Statements</span>
-        <span class='fraction'>0/8</span>
+        <span class='fraction'>0/4</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">100% </span>
+        <span class="strong">0% </span>
         <span class="quiet">Branches</span>
-        <span class='fraction'>0/0</span>
+        <span class='fraction'>0/4</span>
       </div>
       <div class='fl pad1y space-right2'>
         <span class="strong">0% </span>
         <span class="quiet">Functions</span>
-        <span class='fraction'>0/2</span>
+        <span class='fraction'>0/1</span>
       </div>
       <div class='fl pad1y space-right2'>
         <span class="strong">0% </span>
         <span class="quiet">Lines</span>
-        <span class='fraction'>0/8</span>
+        <span class='fraction'>0/3</span>
       </div>
     </div>
   </div>
@@ -68,24 +68,13 @@
 23
 24
 25
-26</td><td class="line-coverage quiet"><span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+26
+27
+28</td><td class="line-coverage quiet"><span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -93,31 +82,48 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { connect } from 'react-redux'<span class="cstat-no" title="statement not covered" ></span>
-import { toggleTodo } from '../store/Todo/actions'
-import TodoList from '../components/TodoList'
-import { makeGetVisibleTodos } from '../store/Todo/selectors'
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import React from 'react'<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ></span></span>
 &nbsp;
-const makeMapStateToProps <span class="cstat-no" title="statement not covered" >= () =&gt; {<span class="fstat-no" title="function not covered" ></span></span>
-  const getVisibleTodos = makeGetVisibleTodos()<span class="cstat-no" title="statement not covered" ></span>
-  const mapStateToProps <span class="cstat-no" title="statement not covered" >= (state,<span class="fstat-no" title="function not covered" > props) =&gt; {</span></span>
-<span class="cstat-no" title="statement not covered" >    return {</span>
-      todos: getVisibleTodos(state, props)
-    }
-  }
-<span class="cstat-no" title="statement not covered" >  return mapStateToProps;</span>
-}
+import FooterFactory from '../components/FooterFactory'
+import AddTodo from '../containers/AddTodo'
+import VisibleTodoList from '../containers/VisibleTodoList'<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" ></span></span>
 &nbsp;
-const mapDispatchToProps <span class="cstat-no" title="statement not covered" >=  ({</span>
-  onTodoClick: toggleTodo
-})
+const Footer = FooterFactory(React);<span class="cstat-no" title="statement not covered" ></span>
 &nbsp;
-const VisibleTodoList = connect(<span class="cstat-no" title="statement not covered" ></span>
-  makeMapStateToProps,
-  mapDispatchToProps
-)(TodoList)
+export default React =&gt; () =&gt; (
+  &lt;div&gt;
+    &lt;div className="mdl-card mdl-card mdl-shadow--2dp" style={{margin:'auto'}}&gt;
+      &lt;div className="mdl-card__media"&gt;
+        &lt;img src="assets/dog.png" width="220" alt="" 
+        style={{padding:20}} /&gt;
+      &lt;/div&gt;
+      &lt;div className="mdl-card__supporting-text"&gt;
+        &lt;AddTodo /&gt;
+        &lt;VisibleTodoList /&gt;
+      &lt;/div&gt;
+      &lt;div className="mdl-card__actions"&gt;
+        &lt;Footer /&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    
+  &lt;/div&gt;
+)
 &nbsp;
-export default VisibleTodoList
 &nbsp;</pre></td></tr>
 </table></pre>
 <div class='push'></div><!-- for sticky footer -->

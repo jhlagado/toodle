@@ -3,7 +3,8 @@
 import React from 'react'
 
 import { connect } from 'react-redux'
-import { setVisibilityFilter } from '../store/Todo/actions'
+
+import { setVisibilityFilter } from '../store/visibilityFilter/actions'
 import LinkFactory from '../components/LinkFactory'
 
 const Link = LinkFactory(React);

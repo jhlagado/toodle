@@ -1,25 +1,19 @@
 import {SET_VISIBILITY_FILTER} from './constants'
-import visibilityFilter from './visibilityFilter'
-
+import visibilityFilter from './reducers'
+import { setVisibilityFilter } from './actions'
 // jest.resetModules();
 
 describe('visibilityFilter reducer', () => {
 
-  it('should handle SET_VISIBILITY_FILTER', () => {
-    expect(
-      visibilityFilter(undefined, {
-        type: SET_VISIBILITY_FILTER,
-        filter: 'SHOW_ACTIVE'
-      })
-    ).toEqual('SHOW_ACTIVE');
+  it('should handle initial state', () => {
+    const noAction = {};
+    expect(visibilityFilter(undefined, noAction)).toEqual('SHOW_ALL')
+    expect(visibilityFilter('SHOW_ACTIVE', noAction)).toEqual('SHOW_ACTIVE')
   })
 
-  it('should handle noop', () => {
-    expect(
-      visibilityFilter('SHOW_ALL', {
-        type: undefined,
-      })
-    ).toEqual('SHOW_ALL');
+  it('should handle SET_VISIBILITY_FILTER', () => {
+    var state = visibilityFilter(undefined, setVisibilityFilter('SHOW_ACTIVE')); 
+    expect(state).toEqual('SHOW_ACTIVE');
   })
 
 })

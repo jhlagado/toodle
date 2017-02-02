@@ -10,8 +10,9 @@ describe('filterlink', () => {
     }
     var map = mapDispatchToProps(dispatch, {filter: 'filter1'});
     map.onClick();
+    console.log('received ---->', received);
     expect(received.type).toBe(SET_VISIBILITY_FILTER);
-    expect(received.filter).toBe('filter1');
+    expect(received.payload).toBe('filter1');
   })
 
 })

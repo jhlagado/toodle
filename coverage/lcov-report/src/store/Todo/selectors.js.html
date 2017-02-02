@@ -1,14 +1,14 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <title>Code coverage report for src/containers/AddTodo.js</title>
+    <title>Code coverage report for src/store/Todo/selectors.js</title>
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="..\..\prettify.css" />
-    <link rel="stylesheet" href="..\..\base.css" />
+    <link rel="stylesheet" href="..\..\..\prettify.css" />
+    <link rel="stylesheet" href="..\..\..\base.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style type='text/css'>
         .coverage-summary .sorter {
-            background-image: url(..\..\sort-arrow-sprite.png);
+            background-image: url(..\..\..\sort-arrow-sprite.png);
         }
     </style>
 </head>
@@ -16,28 +16,28 @@
 <div class='wrapper'>
   <div class='pad1'>
     <h1>
-      <a href="..\..\index.html">All files</a> / <a href="index.html">src/containers</a> AddTodo.js
+      <a href="..\..\..\index.html">All files</a> / <a href="index.html">src/store/Todo</a> selectors.js
     </h1>
     <div class='clearfix'>
       <div class='fl pad1y space-right2'>
         <span class="strong">0% </span>
         <span class="quiet">Statements</span>
-        <span class='fraction'>0/12</span>
+        <span class='fraction'>0/10</span>
       </div>
       <div class='fl pad1y space-right2'>
         <span class="strong">0% </span>
         <span class="quiet">Branches</span>
-        <span class='fraction'>0/2</span>
-      </div>
-      <div class='fl pad1y space-right2'>
-        <span class="strong">0% </span>
-        <span class="quiet">Functions</span>
         <span class='fraction'>0/3</span>
       </div>
       <div class='fl pad1y space-right2'>
         <span class="strong">0% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>0/6</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
         <span class="quiet">Lines</span>
-        <span class='fraction'>0/11</span>
+        <span class='fraction'>0/9</span>
       </div>
     </div>
   </div>
@@ -79,17 +79,9 @@
 34
 35
 36
-37</td><td class="line-coverage quiet"><span class="cline-any cline-no">&nbsp;</span>
+37
+38</td><td class="line-coverage quiet"><span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -97,7 +89,11 @@
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -112,45 +108,52 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import React from 'react'<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ></span></span>
-import { connect } from 'react-redux'
-import { addTodo } from '../store/Todo/actions'
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { createSelector } from 'reselec<span class="cstat-no" title="statement not covered" >t'<span class="cstat-no" title="statement not covered" ></span></span>
 &nbsp;
-let AddTodo = <span class="cstat-no" title="statement not covered" >({ dispatch }) =&gt; {<span class="fstat-no" title="function not covered" ></span></span>
-  let input<span class="cstat-no" title="statement not covered" ></span>
+const getVisibilityFilter <span class="cstat-no" title="statement not covered" >= (state,<span class="fstat-no" title="function not covered" > props) =&gt; state.vis</span>ibilityFilter</span>
+const getTodos <span class="cstat-no" title="statement not covered" >= (state,<span class="fstat-no" title="function not covered" > props) =</span>&gt; state.todos</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >  return (</span>
-    &lt;div&gt;
-      &lt;form onSubmit={e =&gt; {<span class="fstat-no" title="function not covered" ></span>
-        e.pr<span class="cstat-no" title="statement not covered" >eventDefault()</span>
-        if (<span class="cstat-no" title="statement not covered" >!input.value.trim()) {</span>
-          retu<span class="cstat-no" title="statement not covered" >rn</span>
-        }
-        disp<span class="cstat-no" title="statement not covered" >atch(addTodo(input.value))</span>
-        inpu<span class="cstat-no" title="statement not covered" >t.value = ''</span>
-      }}&gt;
-&nbsp;
-        &lt;div className="mdl-textfield mdl-js-textfield mdl-textfield--floating-label"&gt;
-          &lt;input className="mdl-textfield__input" type="text" id="addtodo" ref={node =&gt; {<span class="fstat-no" title="function not covered" ></span>
-            in<span class="cstat-no" title="statement not covered" >put = node</span>
-          }} /&gt;
-          &lt;label className="mdl-textfield__label" htmlFor="addtodo"&gt;Enter the task to do...&lt;/label&gt;
-        &lt;/div&gt;
-&nbsp;
-        
-        &lt;button type="submit" className="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"&gt;
-          Add Todo
-        &lt;/button&gt;
-      &lt;/form&gt;
-    &lt;/div&gt;
+export const makeGetVisibleTodos = () =&gt; {<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" ></span></span>
+<span class="cstat-no" title="statement not covered" >  return createSelector(</span>
+    [ getVisibilityFilter, getTodos ],
+<span class="fstat-no" title="function not covered" >    (v</span>isibilityFilter, todos) =&gt; {
+<span class="cstat-no" title="statement not covered" >      switch (visibilityFilter) {</span>
+        case 'SHOW_COMPLETED':
+<span class="cstat-no" title="statement not covered" >          return todos.filter(<span class="fstat-no" title="function not covered" >to</span>do =&gt; todo.completed)</span>
+        case 'SHOW_ACTIVE':
+<span class="cstat-no" title="statement not covered" >          return todos.filter(<span class="fstat-no" title="function not covered" >to</span>do =&gt; !todo.completed)</span>
+        default:
+<span class="cstat-no" title="statement not covered" >          return todos</span>
+      }
+    }
   )
 }
-<span class="cstat-no" title="statement not covered" >AddTodo = connect()(AddTodo)</span>
 &nbsp;
-export default AddTodo
+&nbsp;
+// export const getVisibleTodos = createSelector(
+//   [ getVisibilityFilter, getTodos ],
+//   (visibilityFilter, todos) =&gt; {
+//     switch (visibilityFilter) {
+//       case 'SHOW_ALL':
+//         return todos;
+//       case 'SHOW_COMPLETED':
+//         return todos.filter(t =&gt; t.completed);
+//       case 'SHOW_ACTIVE':
+//         return todos.filter(t =&gt; !t.completed);
+//       default:
+//         return todos;  
+//     }
+//   }
+// )
 &nbsp;</pre></td></tr>
 </table></pre>
 <div class='push'></div><!-- for sticky footer -->
@@ -160,7 +163,7 @@ export default AddTodo
   generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Thu Feb 02 2017 11:14:47 GMT+1100 (AUS Eastern Daylight Time)
 </div>
 </div>
-<script src="..\..\prettify.js"></script>
+<script src="..\..\..\prettify.js"></script>
 <script>
 window.onload = function () {
         if (typeof prettyPrint === 'function') {
@@ -168,6 +171,6 @@ window.onload = function () {
         }
 };
 </script>
-<script src="..\..\sorter.js"></script>
+<script src="..\..\..\sorter.js"></script>
 </body>
 </html>

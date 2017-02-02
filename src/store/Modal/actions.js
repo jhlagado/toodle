@@ -1,9 +1,10 @@
-// @flow 
+import { createAction } from 'redux-actions';
+import { SHOW_MODAL, HIDE_MODAL } from './constants';
 
-// import makeActionCreator from '../shared/makeActionCreator.js'
-
-// export const SHOW_MODAL = 'SHOW_MODAL';
-// export const HIDE_MODAL = 'HIDE_MODAL';
-
-// export const showModal = makeActionCreator(SHOW_MODAL)
-// export const hideModal = makeActionCreator(HIDE_MODAL)
+export const showModal = createAction(SHOW_MODAL, (type, props) => {
+    return {
+        modalType: type,
+        modalProps: props,
+    }
+});
+export const hideModal = createAction(HIDE_MODAL);

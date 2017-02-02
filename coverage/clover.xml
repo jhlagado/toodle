@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1485994489334" clover="3.2.0">
-  <project timestamp="1485994489335" name="All files">
-    <metrics statements="112" coveredstatements="39" conditionals="59" coveredconditionals="14" methods="42" coveredmethods="13" elements="213" coveredelements="66" complexity="0" loc="112" ncloc="112" packages="9" files="25" classes="25">
+<coverage generated="1486037008745" clover="3.2.0">
+  <project timestamp="1486037008746" name="All files">
+    <metrics statements="139" coveredstatements="49" conditionals="67" coveredconditionals="18" methods="51" coveredmethods="15" elements="257" coveredelements="82" complexity="0" loc="139" ncloc="139" packages="9" files="30" classes="30">
       <package name="src">
         <metrics statements="21" coveredstatements="0" conditionals="16" coveredconditionals="0" methods="7" coveredmethods="0"/>
         <file name="App.js" path="C:\Users\jh\work\react\toodle\src\App.js">
@@ -33,7 +33,7 @@
         </file>
       </package>
       <package name="src.components">
-        <metrics statements="18" coveredstatements="6" conditionals="10" coveredconditionals="0" methods="9" coveredmethods="3"/>
+        <metrics statements="21" coveredstatements="6" conditionals="14" coveredconditionals="0" methods="11" coveredmethods="3"/>
         <file name="FooterFactory.js" path="C:\Users\jh\work\react\toodle\src\components\FooterFactory.js">
           <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
           <line num="3" count="1" type="stmt"/>
@@ -51,6 +51,12 @@
           <line num="22" count="2" type="stmt"/>
           <line num="28" count="2" type="stmt"/>
         </file>
+        <file name="ModalList.js" path="C:\Users\jh\work\react\toodle\src\components\ModalList.js">
+          <metrics statements="3" coveredstatements="0" conditionals="4" coveredconditionals="0" methods="2" coveredmethods="0"/>
+          <line num="1" count="0" type="stmt"/>
+          <line num="2" count="0" type="stmt"/>
+          <line num="4" count="0" type="stmt"/>
+        </file>
         <file name="Todo.js" path="C:\Users\jh\work\react\toodle\src\components\Todo.js">
           <metrics statements="3" coveredstatements="0" conditionals="4" coveredconditionals="0" methods="2" coveredmethods="0"/>
           <line num="1" count="0" type="stmt"/>
@@ -66,7 +72,7 @@
         </file>
       </package>
       <package name="src.containers">
-        <metrics statements="27" coveredstatements="5" conditionals="2" coveredconditionals="0" methods="9" coveredmethods="2"/>
+        <metrics statements="36" coveredstatements="5" conditionals="2" coveredconditionals="0" methods="11" coveredmethods="2"/>
         <file name="AddTodo.js" path="C:\Users\jh\work\react\toodle\src\containers\AddTodo.js">
           <metrics statements="11" coveredstatements="0" conditionals="2" coveredconditionals="0" methods="3" coveredmethods="0"/>
           <line num="1" count="0" type="stmt"/>
@@ -82,18 +88,30 @@
           <line num="34" count="0" type="stmt"/>
         </file>
         <file name="AppMenu.js" path="C:\Users\jh\work\react\toodle\src\containers\AppMenu.js">
-          <metrics statements="3" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+          <metrics statements="4" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
           <line num="1" count="0" type="stmt"/>
           <line num="5" count="0" type="stmt"/>
-          <line num="15" count="0" type="stmt"/>
+          <line num="7" count="0" type="stmt"/>
+          <line num="17" count="0" type="stmt"/>
         </file>
         <file name="FilterLink.js" path="C:\Users\jh\work\react\toodle\src\containers\FilterLink.js">
           <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="2"/>
+          <line num="8" count="2" type="stmt"/>
           <line num="10" count="2" type="stmt"/>
-          <line num="12" count="2" type="stmt"/>
-          <line num="16" count="2" type="stmt"/>
-          <line num="18" count="1" type="stmt"/>
-          <line num="22" count="2" type="stmt"/>
+          <line num="14" count="2" type="stmt"/>
+          <line num="16" count="1" type="stmt"/>
+          <line num="20" count="2" type="stmt"/>
+        </file>
+        <file name="ModalContainer.js" path="C:\Users\jh\work\react\toodle\src\containers\ModalContainer.js">
+          <metrics statements="8" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
+          <line num="1" count="0" type="stmt"/>
+          <line num="5" count="0" type="stmt"/>
+          <line num="6" count="0" type="stmt"/>
+          <line num="7" count="0" type="stmt"/>
+          <line num="8" count="0" type="stmt"/>
+          <line num="12" count="0" type="stmt"/>
+          <line num="15" count="0" type="stmt"/>
+          <line num="19" count="0" type="stmt"/>
         </file>
         <file name="VisibleTodoList.js" path="C:\Users\jh\work\react\toodle\src\containers\VisibleTodoList.js">
           <metrics statements="8" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
@@ -142,16 +160,40 @@
         <file name="reducers.js" path="C:\Users\jh\work\react\toodle\src\store\reducers.js">
           <metrics statements="2" coveredstatements="0" conditionals="4" coveredconditionals="0" methods="1" coveredmethods="0"/>
           <line num="1" count="0" type="stmt"/>
-          <line num="5" count="0" type="stmt"/>
+          <line num="6" count="0" type="stmt"/>
         </file>
         <file name="schema.js" path="C:\Users\jh\work\react\toodle\src\store\schema.js">
           <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         </file>
       </package>
       <package name="src.store.Modal">
-        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <metrics statements="15" coveredstatements="10" conditionals="4" coveredconditionals="4" methods="5" coveredmethods="2"/>
         <file name="actions.js" path="C:\Users\jh\work\react\toodle\src\store\Modal\actions.js">
-          <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+          <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+          <line num="4" count="2" type="stmt"/>
+          <line num="5" count="3" type="stmt"/>
+          <line num="10" count="2" type="stmt"/>
+        </file>
+        <file name="constants.js" path="C:\Users\jh\work\react\toodle\src\store\Modal\constants.js">
+          <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+          <line num="1" count="2" type="stmt"/>
+          <line num="2" count="2" type="stmt"/>
+        </file>
+        <file name="reducers.js" path="C:\Users\jh\work\react\toodle\src\store\Modal\reducers.js">
+          <metrics statements="5" coveredstatements="5" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
+          <line num="3" count="1" type="stmt"/>
+          <line num="6" count="5" type="stmt"/>
+          <line num="8" count="2" type="stmt"/>
+          <line num="16" count="2" type="stmt"/>
+          <line num="18" count="1" type="stmt"/>
+        </file>
+        <file name="selectors.js" path="C:\Users\jh\work\react\toodle\src\store\Modal\selectors.js">
+          <metrics statements="5" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="0"/>
+          <line num="1" count="0" type="stmt"/>
+          <line num="3" count="0" type="stmt"/>
+          <line num="5" count="0" type="stmt"/>
+          <line num="6" count="0" type="stmt"/>
+          <line num="9" count="0" type="stmt"/>
         </file>
       </package>
       <package name="src.store.Todo">

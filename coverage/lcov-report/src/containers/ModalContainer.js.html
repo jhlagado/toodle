@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <title>Code coverage report for src/components/Todo.js</title>
+    <title>Code coverage report for src/containers/ModalContainer.js</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="..\..\prettify.css" />
     <link rel="stylesheet" href="..\..\base.css" />
@@ -16,18 +16,18 @@
 <div class='wrapper'>
   <div class='pad1'>
     <h1>
-      <a href="..\..\index.html">All files</a> / <a href="index.html">src/components</a> Todo.js
+      <a href="..\..\index.html">All files</a> / <a href="index.html">src/containers</a> ModalContainer.js
     </h1>
     <div class='clearfix'>
       <div class='fl pad1y space-right2'>
         <span class="strong">0% </span>
         <span class="quiet">Statements</span>
-        <span class='fraction'>0/5</span>
+        <span class='fraction'>0/8</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">0% </span>
+        <span class="strong">100% </span>
         <span class="quiet">Branches</span>
-        <span class='fraction'>0/4</span>
+        <span class='fraction'>0/0</span>
       </div>
       <div class='fl pad1y space-right2'>
         <span class="strong">0% </span>
@@ -37,7 +37,7 @@
       <div class='fl pad1y space-right2'>
         <span class="strong">0% </span>
         <span class="quiet">Lines</span>
-        <span class='fraction'>0/3</span>
+        <span class='fraction'>0/8</span>
       </div>
     </div>
   </div>
@@ -66,7 +66,24 @@
 21
 22
 23
-24</td><td class="line-coverage quiet"><span class="cline-any cline-no">&nbsp;</span>
+24
+25</td><td class="line-coverage quiet"><span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -74,44 +91,30 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import React, { PropTypes } from 'react<span class="cstat-no" title="statement not covered" >'<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" ></span></span></span></span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { connect } from 'react-redux'<span class="cstat-no" title="statement not covered" ></span>
+import ModalList from '../components/ModalList'
+import { makeGetVisibleModals } from '../store/Modal/selectors'
 &nbsp;
-const Todo <span class="cstat-no" title="statement not covered" >= ({ onCl<span class="fstat-no" title="function not covered" >ick, </span>completed, text }) =&gt; (</span>
-  &lt;li
-    onClick={onClick}
-    style={{
-      textDecoration: completed ? 'line-through' : 'none'
-    }}
-  &gt;
-    {text}
-  &lt;/li&gt;
-)
-&nbsp;
-<span class="cstat-no" title="statement not covered" >Todo.propTypes = {</span>
-  onClick: PropTypes.func.isRequired,
-  completed: PropTypes.bool.isRequired,
-  text: PropTypes.string.isRequired
+const makeMapStateToProps <span class="cstat-no" title="statement not covered" >= () =&gt; {<span class="fstat-no" title="function not covered" ></span></span>
+  const getVisibleModals = makeGetVisibleModals()<span class="cstat-no" title="statement not covered" ></span>
+  const mapStateToProps <span class="cstat-no" title="statement not covered" >= (state,<span class="fstat-no" title="function not covered" > props) =&gt; {</span></span>
+<span class="cstat-no" title="statement not covered" >    return {</span>
+      Modals: getVisibleModals(state, props)
+    }
+  }
+<span class="cstat-no" title="statement not covered" >  return mapStateToProps;</span>
 }
 &nbsp;
-export default Todo
+const mapDispatchToProps <span class="cstat-no" title="statement not covered" >=  ({</span>
+  onModalClick: toggleModal
+})
 &nbsp;
+const ModalContainer = connect(<span class="cstat-no" title="statement not covered" ></span>
+  makeMapStateToProps,
+  mapDispatchToProps
+)(ModalList)
 &nbsp;
-&nbsp;
+export default ModalContainer
 &nbsp;</pre></td></tr>
 </table></pre>
 <div class='push'></div><!-- for sticky footer -->

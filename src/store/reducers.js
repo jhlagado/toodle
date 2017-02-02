@@ -2,10 +2,12 @@ import { combineReducers } from 'redux';
 import routerReducer from 'react-router-redux'
 
 import { todos } from './Todo/reducers'
-import visibilityFilter from './visibilityFilter/reducers'
+import visibilityFilterReducer from './visibilityFilter/reducers'
+import modalReducer from './Modal/reducers'
 
 export default combineReducers({
-  todos,
-  visibilityFilter,
+  todos: todos,
+  visibilityFilter: visibilityFilterReducer,
+  modals: modalReducer,
   routing: routerReducer
-})
+});

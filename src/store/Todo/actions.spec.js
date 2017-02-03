@@ -1,4 +1,4 @@
-import {ADD_TODO, SET_VISIBILITY_FILTER, TOGGLE_TODO} from './constants'
+import {ADD_TODO, SET_VISIBILITY_FILTER, TOGGLE_TODO} from './actions'
 import { toggleTodo, addTodo } from './actions'
 
 describe('todo actions', () => {

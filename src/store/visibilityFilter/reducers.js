@@ -1,4 +1,4 @@
-import {SET_VISIBILITY_FILTER} from './constants'
+import {SET_VISIBILITY_FILTER} from './actions'
 
 const visibilityFilter = (state = 'SHOW_ALL', action) => {
 

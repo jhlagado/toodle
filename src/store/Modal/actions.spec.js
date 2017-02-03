@@ -1,12 +1,13 @@
-import { SHOW_MODAL, HIDE_MODAL } from './constants'
+import { SHOW_MODAL, HIDE_MODAL } from './actions'
 import { showModal, hideModal } from './actions'
 
 describe('modal actions', () => {
 
   it('showModal should create SHOW_MODAL action', () => {
-    expect(showModal('DELETE_POST', { postId: 42 })).toEqual({
+    expect(showModal('DELETE_POST', { postId: 42 }, 1)).toEqual({
       type: SHOW_MODAL,
       payload: {
+        id: 1,
         modalType: 'DELETE_POST',
         modalProps: { 
           postId: 42 

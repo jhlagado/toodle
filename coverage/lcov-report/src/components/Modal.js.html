@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <title>Code coverage report for src/components/TodoList.js</title>
+    <title>Code coverage report for src/components/Modal.js</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="..\..\prettify.css" />
     <link rel="stylesheet" href="..\..\base.css" />
@@ -16,13 +16,13 @@
 <div class='wrapper'>
   <div class='pad1'>
     <h1>
-      <a href="..\..\index.html">All files</a> / <a href="index.html">src/components</a> TodoList.js
+      <a href="..\..\index.html">All files</a> / <a href="index.html">src/components</a> Modal.js
     </h1>
     <div class='clearfix'>
       <div class='fl pad1y space-right2'>
         <span class="strong">0% </span>
         <span class="quiet">Statements</span>
-        <span class='fraction'>0/5</span>
+        <span class='fraction'>0/8</span>
       </div>
       <div class='fl pad1y space-right2'>
         <span class="strong">0% </span>
@@ -32,12 +32,12 @@
       <div class='fl pad1y space-right2'>
         <span class="strong">0% </span>
         <span class="quiet">Functions</span>
-        <span class='fraction'>0/2</span>
+        <span class='fraction'>0/3</span>
       </div>
       <div class='fl pad1y space-right2'>
         <span class="strong">0% </span>
         <span class="quiet">Lines</span>
-        <span class='fraction'>0/4</span>
+        <span class='fraction'>0/6</span>
       </div>
     </div>
   </div>
@@ -68,16 +68,13 @@
 23
 24
 25
-26
-27
-28
-29</td><td class="line-coverage quiet"><span class="cline-any cline-no">&nbsp;</span>
+26</td><td class="line-coverage quiet"><span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -96,37 +93,31 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import React, { PropTypes } from 'react<span class="cstat-no" title="statement not covered" >'<span class="cstat-no" title="statement not covered" ></span></span>
-import Todo from './Todo'<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" ></span></span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import React, { PropTypes } from 'react<span class="cstat-no" title="statement not covered" >'<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" ></span></span></span></span>
 &nbsp;
-const TodoList <span class="cstat-no" title="statement not covered" >= ({ todo<span class="fstat-no" title="function not covered" >s, onTodo</span>Click }) =&gt; (</span>
-  &lt;ul&gt;
-    {todos.map(todo =&gt;
-      &lt;Todo
-        key={todo.id}
-        {...todo}
-        onClick={() =&gt; onTodoClick(todo.id)}
-      /&gt;
-    )}
-  &lt;/ul&gt;
-)
-&nbsp;
-<span class="cstat-no" title="statement not covered" >TodoList.propTypes = {</span>
-&nbsp;
-  todos: PropTypes.arrayOf(PropTypes.shape({
-    id: PropTypes.string.isRequired,
-    completed: PropTypes.bool.isRequired,
-    text: PropTypes.string.isRequired
-  }).isRequired).isRequired,
-&nbsp;
-  onTodoClick: PropTypes.func.isRequired
-&nbsp;
+const Modal <span class="cstat-no" title="statement not covered" >= ({ moda<span class="fstat-no" title="function not covered" >lType,</span> modalProps }) =&gt; {</span>
+  const initElem <span class="cstat-no" title="statement not covered" >= (elem) <span class="fstat-no" title="function not covered" >=&gt; {</span></span>
+<span class="cstat-no" title="statement not covered" >    console.log('init elem' + elem);</span>
+  };
+<span class="cstat-no" title="statement not covered" >  return (</span>
+    &lt;div
+      ref={ initElem }
+    &gt;
+      {modalType} : {modalProps}
+    &lt;/div&gt;
+  )
 }
 &nbsp;
-export default TodoList
+<span class="cstat-no" title="statement not covered" >Modal.propTypes = {</span>
+//   onClick: PropTypes.func.isRequired,
+//   completed: PropTypes.bool.isRequired,
+//   text: PropTypes.string.isRequired
+}
+&nbsp;
+export default Modal
+&nbsp;
+&nbsp;
+&nbsp;
 &nbsp;</pre></td></tr>
 </table></pre>
 <div class='push'></div><!-- for sticky footer -->

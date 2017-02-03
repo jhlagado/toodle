@@ -3,6 +3,7 @@ import { render } from 'react-dom'
 import { Provider } from 'react-redux'
 import { Router, Route, IndexRoute, hashHistory } from 'react-router'
 import { syncHistoryWithStore } from 'react-router-redux'
+import ModalListContainer from './containers/ModalListContainer'
 
 import store from './store'
 
@@ -26,6 +27,13 @@ render(
     </Router>
   </Provider>,
   document.getElementById('root')
+)
+
+render(
+  <Provider store={store}>
+    <ModalListContainer />
+  </Provider>,
+  document.getElementById('modals')
 )
 
 window.addEventListener('load', function() {

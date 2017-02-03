@@ -1,4 +1,4 @@
-import {SET_VISIBILITY_FILTER} from './constants'
+import {SET_VISIBILITY_FILTER} from './actions'
 import visibilityFilter from './reducers'
 import { setVisibilityFilter } from './actions'
 // jest.resetModules();

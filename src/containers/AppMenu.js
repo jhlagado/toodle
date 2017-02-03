@@ -1,8 +1,8 @@
 import React from 'react'
 import { connect } from 'react-redux'
-import { menuShow } from '../store/Modal/actions'
 
-const logoutModal = (<h1>Hi!!!!</h1>);
+import { showLogoutModal } from '../store/auth/actions'
+console.log('showLogoutModal', showLogoutModal);
 
 let AppMenu = ({ dispatch }) => (
     <ul className="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect"
@@ -10,10 +10,10 @@ let AppMenu = ({ dispatch }) => (
       <li className="mdl-menu__item">Some Action</li>
       <li className="mdl-menu__item">Another Action</li>
       <li disabled className="mdl-menu__item">Disabled Action</li>
-      <li className="mdl-menu__item" onClick={e => dispatch(menuShow(logoutModal))}>Log out</li>
+      <li className="mdl-menu__item" onClick={e => dispatch(showLogoutModal())}>Log out</li>
     </ul>
 )
-
+ 
 AppMenu = connect()(AppMenu)
 
 export default AppMenu

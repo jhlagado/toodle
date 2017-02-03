@@ -2,7 +2,7 @@ import { createSelector } from 'reselect'
 
 const getModals = (state, props) => state.modals
 
-export const makeGetVisibleModals = () => {
+export const makeGetModals = () => {
   return createSelector(
     getModals,
     Modals => {

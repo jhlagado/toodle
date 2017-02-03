@@ -1,16 +1,27 @@
-import React, { PropTypes } from 'react'
-import Modal from './Modal'
+import React from 'react'
+// import { PropTypes } from 'react'
+// import Modal from './Modal'
+import logoutModal from './logoutModal'
+import BasicModal from './BasicModal'
 
-const ModalList = ({ Modals }) => (
-  <ul>
-    {Modals.map(Modal =>
-      <Modal
-        key={Modal.id}
-        {...Modal}
-      />
-    )}
-  </ul>
-)
+const MODAL_COMPONENTS = {
+  'LOGOUT': logoutModal,
+  'BASIC_MODAL': BasicModal,
+}
+
+const ModalList = ({ modals }) => {
+  return (
+    <div> 
+    { 
+      modals.map(({modalType, modalProps, id}) => { 
+        var ModalComponent = MODAL_COMPONENTS[modalType];
+        if (!ModalComponent) return null; //return <span />
+        return <ModalComponent key={id} {...modalProps} />
+      })  
+    }
+    </div>
+  );
+}
 
 // ModalList.propTypes = {
 

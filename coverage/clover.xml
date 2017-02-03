@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1486037008745" clover="3.2.0">
-  <project timestamp="1486037008746" name="All files">
-    <metrics statements="139" coveredstatements="49" conditionals="67" coveredconditionals="18" methods="51" coveredmethods="15" elements="257" coveredelements="82" complexity="0" loc="139" ncloc="139" packages="9" files="30" classes="30">
+<coverage generated="1486076471055" clover="3.2.0">
+  <project timestamp="1486076471056" name="All files">
+    <metrics statements="144" coveredstatements="49" conditionals="73" coveredconditionals="19" methods="54" coveredmethods="15" elements="271" coveredelements="83" complexity="0" loc="144" ncloc="144" packages="9" files="31" classes="31">
       <package name="src">
         <metrics statements="21" coveredstatements="0" conditionals="16" coveredconditionals="0" methods="7" coveredmethods="0"/>
         <file name="App.js" path="C:\Users\jh\work\react\toodle\src\App.js">
@@ -20,20 +20,20 @@
         <file name="index.js" path="C:\Users\jh\work\react\toodle\src\index.js">
           <metrics statements="11" coveredstatements="0" conditionals="6" coveredconditionals="0" methods="4" coveredmethods="0"/>
           <line num="1" count="0" type="stmt"/>
-          <line num="11" count="0" type="stmt"/>
-          <line num="13" count="0" type="stmt"/>
+          <line num="12" count="0" type="stmt"/>
           <line num="14" count="0" type="stmt"/>
-          <line num="16" count="0" type="stmt"/>
-          <line num="31" count="0" type="stmt"/>
-          <line num="37" count="0" type="stmt"/>
-          <line num="38" count="0" type="stmt"/>
+          <line num="15" count="0" type="stmt"/>
+          <line num="17" count="0" type="stmt"/>
           <line num="39" count="0" type="stmt"/>
-          <line num="40" count="0" type="stmt"/>
-          <line num="49" count="0" type="stmt"/>
+          <line num="45" count="0" type="stmt"/>
+          <line num="46" count="0" type="stmt"/>
+          <line num="47" count="0" type="stmt"/>
+          <line num="48" count="0" type="stmt"/>
+          <line num="57" count="0" type="stmt"/>
         </file>
       </package>
       <package name="src.components">
-        <metrics statements="21" coveredstatements="6" conditionals="14" coveredconditionals="0" methods="11" coveredmethods="3"/>
+        <metrics statements="27" coveredstatements="6" conditionals="18" coveredconditionals="0" methods="14" coveredmethods="3"/>
         <file name="FooterFactory.js" path="C:\Users\jh\work\react\toodle\src\components\FooterFactory.js">
           <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
           <line num="3" count="1" type="stmt"/>
@@ -51,11 +51,20 @@
           <line num="22" count="2" type="stmt"/>
           <line num="28" count="2" type="stmt"/>
         </file>
+        <file name="Modal.js" path="C:\Users\jh\work\react\toodle\src\components\Modal.js">
+          <metrics statements="6" coveredstatements="0" conditionals="4" coveredconditionals="0" methods="3" coveredmethods="0"/>
+          <line num="1" count="0" type="stmt"/>
+          <line num="3" count="0" type="stmt"/>
+          <line num="4" count="0" type="stmt"/>
+          <line num="5" count="0" type="stmt"/>
+          <line num="7" count="0" type="stmt"/>
+          <line num="16" count="0" type="stmt"/>
+        </file>
         <file name="ModalList.js" path="C:\Users\jh\work\react\toodle\src\components\ModalList.js">
           <metrics statements="3" coveredstatements="0" conditionals="4" coveredconditionals="0" methods="2" coveredmethods="0"/>
           <line num="1" count="0" type="stmt"/>
-          <line num="2" count="0" type="stmt"/>
-          <line num="4" count="0" type="stmt"/>
+          <line num="3" count="0" type="stmt"/>
+          <line num="5" count="0" type="stmt"/>
         </file>
         <file name="Todo.js" path="C:\Users\jh\work\react\toodle\src\components\Todo.js">
           <metrics statements="3" coveredstatements="0" conditionals="4" coveredconditionals="0" methods="2" coveredmethods="0"/>
@@ -72,7 +81,7 @@
         </file>
       </package>
       <package name="src.containers">
-        <metrics statements="36" coveredstatements="5" conditionals="2" coveredconditionals="0" methods="11" coveredmethods="2"/>
+        <metrics statements="35" coveredstatements="5" conditionals="2" coveredconditionals="0" methods="11" coveredmethods="2"/>
         <file name="AddTodo.js" path="C:\Users\jh\work\react\toodle\src\containers\AddTodo.js">
           <metrics statements="11" coveredstatements="0" conditionals="2" coveredconditionals="0" methods="3" coveredmethods="0"/>
           <line num="1" count="0" type="stmt"/>
@@ -88,9 +97,8 @@
           <line num="34" count="0" type="stmt"/>
         </file>
         <file name="AppMenu.js" path="C:\Users\jh\work\react\toodle\src\containers\AppMenu.js">
-          <metrics statements="4" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+          <metrics statements="3" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
           <line num="1" count="0" type="stmt"/>
-          <line num="5" count="0" type="stmt"/>
           <line num="7" count="0" type="stmt"/>
           <line num="17" count="0" type="stmt"/>
         </file>
@@ -155,7 +163,7 @@
           <line num="1" count="0" type="stmt"/>
           <line num="4" count="0" type="stmt"/>
           <line num="6" count="0" type="stmt"/>
-          <line num="8" count="0" type="stmt"/>
+          <line num="16" count="0" type="stmt"/>
         </file>
         <file name="reducers.js" path="C:\Users\jh\work\react\toodle\src\store\reducers.js">
           <metrics statements="2" coveredstatements="0" conditionals="4" coveredconditionals="0" methods="1" coveredmethods="0"/>
@@ -167,12 +175,12 @@
         </file>
       </package>
       <package name="src.store.Modal">
-        <metrics statements="15" coveredstatements="10" conditionals="4" coveredconditionals="4" methods="5" coveredmethods="2"/>
+        <metrics statements="15" coveredstatements="10" conditionals="6" coveredconditionals="5" methods="5" coveredmethods="2"/>
         <file name="actions.js" path="C:\Users\jh\work\react\toodle\src\store\Modal\actions.js">
-          <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-          <line num="4" count="2" type="stmt"/>
-          <line num="5" count="3" type="stmt"/>
-          <line num="10" count="2" type="stmt"/>
+          <metrics statements="3" coveredstatements="3" conditionals="2" coveredconditionals="1" methods="1" coveredmethods="1"/>
+          <line num="5" count="2" type="stmt"/>
+          <line num="6" count="3" type="stmt"/>
+          <line num="12" count="2" type="stmt"/>
         </file>
         <file name="constants.js" path="C:\Users\jh\work\react\toodle\src\store\Modal\constants.js">
           <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
@@ -184,8 +192,8 @@
           <line num="3" count="1" type="stmt"/>
           <line num="6" count="5" type="stmt"/>
           <line num="8" count="2" type="stmt"/>
-          <line num="16" count="2" type="stmt"/>
-          <line num="18" count="1" type="stmt"/>
+          <line num="17" count="2" type="stmt"/>
+          <line num="19" count="1" type="stmt"/>
         </file>
         <file name="selectors.js" path="C:\Users\jh\work\react\toodle\src\store\Modal\selectors.js">
           <metrics statements="5" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="0"/>

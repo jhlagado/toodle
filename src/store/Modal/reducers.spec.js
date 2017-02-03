@@ -11,11 +11,12 @@ describe('modal reducer', () => {
 
   it('should handle showModal() and hideModal()', () => {
 
-    const action1 = showModal('DELETE_POST', { postId: 42 });
-    const action2 = showModal('CONFIRM_DELETE_POST');
+    const action1 = showModal('DELETE_POST', { postId: 42 }, 1);
+    const action2 = showModal('CONFIRM_DELETE_POST', undefined, 2);
     const action3 = hideModal();
 
     const item1 = {
+      id: 1,
       modalType: 'DELETE_POST',
       modalProps: {
         postId: 42,
@@ -23,6 +24,7 @@ describe('modal reducer', () => {
     };
 
     const item2 = {
+      id: 2,
       modalType: 'CONFIRM_DELETE_POST',
       modalProps: undefined,
     };

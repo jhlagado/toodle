@@ -1,4 +1,4 @@
-import { SHOW_MODAL, HIDE_MODAL } from './constants';
+import { SHOW_MODAL, HIDE_MODAL } from './actions';
 
 const initialState = [];
 
@@ -8,6 +8,7 @@ export default (state = initialState, action) => {
       return [
         ...state, 
         {
+          id: action.payload.id,
           modalType: action.payload.modalType,
           modalProps: action.payload.modalProps
         }

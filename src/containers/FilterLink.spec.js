@@ -1,4 +1,4 @@
-import {SET_VISIBILITY_FILTER} from '../store/Todo/constants'
+import {SET_VISIBILITY_FILTER} from '../store/Todo/actions'
 import {mapDispatchToProps} from './FilterLink'
 
 describe('filterlink', () => {

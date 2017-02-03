@@ -1,14 +1,14 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <title>Code coverage report for src/store/Modal/reducers.js</title>
+    <title>Code coverage report for src/components/logoutModal.js</title>
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="..\..\..\prettify.css" />
-    <link rel="stylesheet" href="..\..\..\base.css" />
+    <link rel="stylesheet" href="..\..\prettify.css" />
+    <link rel="stylesheet" href="..\..\base.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style type='text/css'>
         .coverage-summary .sorter {
-            background-image: url(..\..\..\sort-arrow-sprite.png);
+            background-image: url(..\..\sort-arrow-sprite.png);
         }
     </style>
 </head>
@@ -16,28 +16,28 @@
 <div class='wrapper'>
   <div class='pad1'>
     <h1>
-      <a href="..\..\..\index.html">All files</a> / <a href="index.html">src/store/Modal</a> reducers.js
+      <a href="..\..\index.html">All files</a> / <a href="index.html">src/components</a> logoutModal.js
     </h1>
     <div class='clearfix'>
       <div class='fl pad1y space-right2'>
         <span class="strong">100% </span>
         <span class="quiet">Statements</span>
-        <span class='fraction'>5/5</span>
+        <span class='fraction'>0/0</span>
       </div>
       <div class='fl pad1y space-right2'>
         <span class="strong">100% </span>
         <span class="quiet">Branches</span>
-        <span class='fraction'>4/4</span>
+        <span class='fraction'>0/0</span>
       </div>
       <div class='fl pad1y space-right2'>
         <span class="strong">100% </span>
         <span class="quiet">Functions</span>
-        <span class='fraction'>1/1</span>
+        <span class='fraction'>0/0</span>
       </div>
       <div class='fl pad1y space-right2'>
         <span class="strong">100% </span>
         <span class="quiet">Lines</span>
-        <span class='fraction'>5/5</span>
+        <span class='fraction'>0/0</span>
       </div>
     </div>
   </div>
@@ -65,14 +65,11 @@
 20
 21
 22
-23</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">5x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
+23
+24
+25
+26
+27</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -81,33 +78,48 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { SHOW_MODAL, HIDE_MODAL } from './actions';
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">// import React from 'react'
+// import { connect } from 'react-redux'
 &nbsp;
-const initialState = [];
+// // import { PropTypes } from 'react'
+// import BasicModal from './BasicModal'
+// import { hideModal } from '../store/Modal/actions'
+// import { logout } from '../store/auth/actions'
 &nbsp;
-export default (state = initialState, action) =&gt; {
-  switch (action.type) {
-    case SHOW_MODAL:
-      return [
-        ...state, 
-        {
-          id: action.payload.id,
-          modalType: action.payload.modalType,
-          modalProps: action.payload.modalProps
-        }
-      ]
-    case HIDE_MODAL:
-      return state.slice(0, -1);
-    default:
-      return state
-  }
-}
+// const logoutModal = ({ dispatch }) =&gt; {
+&nbsp;
+//   return &lt;BasicModal 
+//     title="Logout" 
+//     message="Do you want to logout?" 
+//     buttons={[
+//       { id: 'ok', title: 'OK', onClick: agree },
+//       { id: 'cancel', title: 'Cancel', onClick: hide },
+//     ]} 
+//   /&gt;
+// }
+// // logoutModal.propTypes = {
+// // }
+&nbsp;
+// export default connect(
+// )(logoutModal)
+&nbsp;
 &nbsp;
 &nbsp;</pre></td></tr>
 </table></pre>
@@ -118,7 +130,7 @@ export default (state = initialState, action) =&gt; {
   generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Sat Feb 04 2017 01:01:53 GMT+1100 (AUS Eastern Daylight Time)
 </div>
 </div>
-<script src="..\..\..\prettify.js"></script>
+<script src="..\..\prettify.js"></script>
 <script>
 window.onload = function () {
         if (typeof prettyPrint === 'function') {
@@ -126,6 +138,6 @@ window.onload = function () {
         }
 };
 </script>
-<script src="..\..\..\sorter.js"></script>
+<script src="..\..\sorter.js"></script>
 </body>
 </html>

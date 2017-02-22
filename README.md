@@ -9,3 +9,7 @@ It's a CRA app so simply check out and run:
 
 ```bash
 npm start
+```
+
+And it will be accessible at http://localhost:3000/
+
